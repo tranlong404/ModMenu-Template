@@ -1,6 +1,6 @@
-# LibTool Mod Menu Template (Apple HIG ImGui · ARM64)
+# Mod Menu Template (Apple HIG ImGui · ARM64)
 
-A modern, lightweight Android Mod Menu template built on **LibTool's Apple HIG ImGui UI** (`WorkspaceUI` + `SurfaceOverlay` + `EGL` fallback + `KittyMemory` + `Dobby`).
+A modern, lightweight Android Mod Menu template built on **Apple HIG ImGui UI** (`WorkspaceUI` + `SurfaceOverlay` + `EGL` fallback + `KittyMemory` + `Dobby`).
 
 - **One-file authoring**: edit only [`jni/Features.cpp`](jni/Features.cpp) to add tabs, categories, toggles, hex patches, sliders, dropdowns, inputs, buttons, and always-on ESP/HUD overlays.
 - **Zero legacy Java Views / Manifest edits**: uses `InMemoryDexClassLoader` (`SurfaceOverlay`) with automatic `eglSwapBuffers` fallback — works on Android 9–16 and MuMu/emulators.
