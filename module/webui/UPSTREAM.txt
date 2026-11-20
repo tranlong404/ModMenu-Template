@@ -1,0 +1,9 @@
+KsuWebUI Standalone v1.0 (34) by 5ec1cff.
+The bundled APK is the unmodified upstream release.
+
+Release and corresponding source:
+https://github.com/5ec1cff/KsuWebUIStandalone/releases/tag/v1.0
+https://github.com/5ec1cff/KsuWebUIStandalone/tree/v1.0
+
+License: GPL-3.0, included as licenses/KsuWebUI-GPL-3.0.txt.
+APK SHA-256: a99e9a66c79d94db7cc5cf0c12607df1790215423e3d917c937dc16093c8135d

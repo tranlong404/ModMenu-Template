@@ -1,0 +1,11 @@
+jni/build/
+jni/obj/
+jni/libs/
+zygisk-loader/build/
+artifacts/
+*.o
+*.a
+*.pyc
+__pycache__/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,6 @@
+id=zygisk_modmenu_template
+name=LibTool Mod Menu Template
+version=1.0.0
+versionCode=10000
+author=LibTool ModMenu Template
+description=Apple HIG ImGui Android Mod Menu template (ARM64 + NativeBridge) with declarative C++ API, KittyMemory & Dobby.

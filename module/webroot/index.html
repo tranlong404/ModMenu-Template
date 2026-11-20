@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; img-src data:">
+  <link rel="stylesheet" href="style.css">
+  <title>Mod Menu Template</title>
+</head>
+<body>
+  <header class="bar">
+    <div class="bar-inner">
+      <span class="brand">Mod Menu Template</span>
+      <span id="version" class="version" hidden></span>
+      <button id="refresh" class="secondary refresh" type="button" disabled>Làm mới</button>
+    </div>
+  </header>
+  <main>
+    <div class="intro">
+      <h1>Quản lý ứng dụng</h1>
+      <p>Chọn ứng dụng, lưu cấu hình rồi mở lại ứng dụng để áp dụng.</p>
+    </div>
+    <div class="workspace">
+      <section class="card" aria-labelledby="apps-heading">
+        <div class="card-header">
+          <h2 id="apps-heading">Ứng dụng đã cài</h2>
+          <span id="app-count" class="count"></span>
+        </div>
+        <input id="filter" class="filter" type="search" placeholder="Tìm theo tên hoặc tên gói" aria-label="Tìm ứng dụng">
+        <div id="apps" class="app-list" aria-busy="true"><p class="empty">Đang đọc danh sách…</p></div>
+      </section>
+      <div class="sidebar">
+        <section class="card" aria-labelledby="selection-heading">
+          <div class="card-header">
+            <h2 id="selection-heading">Đã chọn</h2>
+            <span id="selected-count" class="count">0</span>
+          </div>
+          <ul id="selection" class="selection"></ul>
+          <details id="advanced">
+            <summary>Tên tiến trình bổ sung</summary>
+            <textarea id="extra" aria-label="Tên tiến trình bổ sung" placeholder="com.example.app:worker" spellcheck="false"></textarea>
+          </details>
+          <div class="delay-box">
+            <label class="delay-label" for="delay-seconds">Độ trễ nạp module (giây)</label>
+            <div class="delay-row">
+              <input id="delay-seconds" class="delay-input" type="number" min="0" max="180" step="1" value="15" inputmode="numeric">
+              <span class="delay-hint">0–180s (mặc định 15s)</span>
+            </div>
+          </div>
+          <div class="buttons">
+            <button id="save" class="primary" type="button" disabled>Lưu</button>
+            <button id="launch" class="secondary" type="button" disabled>Mở ứng dụng</button>
+            <button id="clear" class="text-button" type="button" disabled>Bỏ chọn tất cả</button>
+          </div>
+        </section>
+        <section class="card environment" aria-labelledby="provider-heading">
+          <div class="card-header">
+            <h2 id="provider-heading">Zygisk</h2>
+            <span id="provider-badge" class="provider-badge">Đang kiểm tra</span>
+          </div>
+          <p id="provider-message" class="provider-message" hidden></p>
+          <button id="provider-install" class="secondary" type="button" hidden>Cài Zygisk Next</button>
+        </section>
+      </div>
+    </div>
+    <p id="status" class="status" role="status" aria-live="polite">Đang đọc cấu hình…</p>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
